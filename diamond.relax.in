@@ -7,7 +7,7 @@
 /
 &SYSTEM
     ecutwfc                   = 80
-    ibrav                     = 2 ! FCC Lattice
+    ibrav                     = 2 ! FCC 
     celldm(1)                 = 6.7403 !Lattice Constant
     nat                       = 2
     occupations               ='smearing'
