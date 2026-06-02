@@ -6,7 +6,7 @@
     forc_conv_thr = 0.0001
 /
 &SYSTEM
-    ecutwfc                   = 80
+    ecutwfc                   = 80 !optimize for best results
     ibrav                     = 2 ! FCC 
     celldm(1)                 = 6.7403 !Lattice Constant
     nat                       = 2
@@ -24,7 +24,7 @@
 cell_dofree='all'
 /
 K_POINTS AUTOMATIC
-4 4 4 0 0 0
+4 4 4 0 0 0 !optimize k-points for best results
 ATOMIC_SPECIES
 C 12.0107 C.upf
  ATOMIC_POSITIONS {crystal}
