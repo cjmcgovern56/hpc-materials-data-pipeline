@@ -15,4 +15,4 @@ module load chem/qe/6.8
 rm -rf diamond.save
 
 # Run with explicit input flag and error redirection
-mpirun -n 16 pw.x -in diamond.relax.in > diamond.relax.out 2>&1
+mpirun -n 16 pw.x -in diamond.vc-relax.in > diamond.vc-relax.out 2>&1
