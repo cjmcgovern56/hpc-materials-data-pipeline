@@ -1,0 +1,32 @@
+&CONTROL
+    calculation = "vc-relax"
+    prefix      = "diamond"
+    pseudo_dir  = "../../pseudo/"
+    outdir      = "./"
+    forc_conv_thr = 0.0001
+/
+&SYSTEM
+    ecutwfc                   = 80 
+    ibrav                     = 2 ! FCC 
+    celldm(1)                 = 6.7403 !Lattice Constant
+    nat                       = 2
+    occupations               ='smearing'
+    smearing                  ='gaussian'
+    degauss                   = 0.01
+    ntyp                      = 1
+    nbnd                      = 8
+/
+&ELECTRONS
+  conv_thr = 1.0d-9
+&IONS
+/
+&CELL
+cell_dofree='all'
+/
+K_POINTS AUTOMATIC
+6 6 6 0 0 0 !optimized k-points for best results (iterations of 4x4x4, 6x6x6 & 8x8x8)
+ATOMIC_SPECIES
+C 12.0107 C.upf
+ ATOMIC_POSITIONS {crystal}
+C  0.00000 0.00000 0.00000
+C  0.25000 0.25000 0.25000
