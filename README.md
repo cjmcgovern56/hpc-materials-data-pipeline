@@ -62,7 +62,6 @@ Run the clean data pipeline script to automatically generate the dual-axis plots
 ```bash
 python convergence_plots.py
 
-### 2. Run Quantum ESPRESSO Relaztion Cycles
 # Execute Diamond Optimization (4x4x4 K-Points)
 pw.x -in 01_diamond/diamond.vc-relax.in > 01_diamond/diamond.vc-relax.out
 
